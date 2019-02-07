@@ -2,7 +2,11 @@ import requests
 import json
 import time
 import logging
-from dnac_config import DNAC, DNAC_PORT, DNAC_USER, DNAC_PASSWORD
+import os.path
+if os.path.isfile('./dnac_config_local.py'):
+    from dnac_config_local import DNAC, DNAC_PORT, DNAC_USER, DNAC_PASSWORD
+else:
+    from dnac_config import DNAC, DNAC_PORT, DNAC_USER, DNAC_PASSWORD
 from requests.auth import HTTPBasicAuth
 requests.packages.urllib3.disable_warnings()
 
