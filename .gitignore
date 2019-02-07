@@ -1,1 +1,3 @@
-dnac_config.py
+__pycache__/
+*.py[cod]
+dnac_config_local.py
