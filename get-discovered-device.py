@@ -39,8 +39,7 @@ if __name__ == "__main__":
         filtered_list = create_filtered_list(response)
 
     for device in filtered_list:
-        #print(device['hostIp'])
-        if 'wireless' in device['hostType']:
+        if 'wireless' in device['hostType'] and device['wlanNetworkName']:
             ssid = device['wlanNetworkName']
             device_type = device["hostDeviceType"]
         else:
