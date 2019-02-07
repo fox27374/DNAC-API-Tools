@@ -14,3 +14,18 @@ This script will show all of the network devices in the inventory of Cisco DNA C
 ./get-network-device.py --hostname cisco
 
 ```
+
+## get-discovered-device.py
+This script will show all of the network devices discovered and connected to one of the network devices in the DNAC. Filters can be applied via arguments.
+```buildoutcfg
+./get-discovered-device.py
+./get-discovered-device.py --ip 10.10.22.70
+
+```
+
+## debug-api-output.py
+This script just prints the API responde in a formated way.
+```buildoutcfg
+./debug-api-output.py -u host
+
+```
