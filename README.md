@@ -22,6 +22,20 @@ This script will show all of the network devices discovered and connected to one
 
 ```
 
+## get-device-connection.py
+This script will show you where the device is connected to (e.g. switch interface and vlan). IP or MAC needs to be supplied.
+```buildoutcfg
+./get-device-connection.py --ip 172.24.80.144
+
+```
+
+## get-device-interface.py
+This script will show you all the switch interfaces and some information with them. Currently only for switches. IP needs to be supplied.
+```buildoutcfg
+./get-device-interface.py --ip 172.24.89.254
+
+```
+
 ## debug-api-output.py
 This script just prints the API responde in a formated way.
 ```buildoutcfg
