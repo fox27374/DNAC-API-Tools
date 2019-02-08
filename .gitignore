@@ -1,4 +1,4 @@
 __pycache__/
 *.py[cod]
+\_*
 dnac_config_local.py
-get-path-trace.py
